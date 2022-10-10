@@ -1,46 +1,32 @@
-package classwork5;
+package classwork7;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class HW1 {
     public static void main(String[] args) {
-        boolean isSunny = true;
-        boolean isWindy = false;
-        boolean canSwim = isSunny && isWindy;
-        System.out.println("Солнечно и не дует вветер " + canSwim);
+        Random rand = new Random();
 
-        boolean isEdekaOpen = true;
-        boolean isReweOpen = false;
-        boolean canBuy = isEdekaOpen || isReweOpen;
-        System.out.println("Я могу купить еду,это .." + canBuy);
+        boolean Eagle = true;
+        boolean Tails = false;
+        System.out.println(rand.nextBoolean());
 
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        System.out.println(isDividedFor4And6(number) );
+    }
+
+    static boolean fellout(){
+        Random random= new Random();
+        boolean Eagle = random.nextBoolean();
+        boolean Tails = random.nextBoolean();
+        return Eagle && Tails;
 
 
     }
 
-    static boolean howe(String str){
-        return str.length() < 7;
-
-    }
-
-    static boolean isDividedFor4And6(int number) {
-        boolean isDivedFor4 = number % 4 == 0;
-        boolean isDivedFor6 = number % 6 == 0;
-        return isDivedFor4 && isDivedFor6;
-
+    public static void main(String[] args) {
+        Random random = new Random();
+          random.nextInt(2024);
 
 
     }
 
-
-}
-
-
-
-
-
-
-
+    }
