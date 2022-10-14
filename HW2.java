@@ -1,22 +1,29 @@
-package classwork5;
+package homwork2;
 
-import java.util.Scanner;
+import java.util.Random;
 
 public class HW2 {
     public static void main(String[] args) {
-       int temperature1 = 100;
-       int temperature2 = 100;
-       boolean work = temperature1 > 100 && temperature2 < 100;
+        Random rand = new Random();
+        int number =  rand.nextInt(9_999) + 1;
+        int lastDigit = number % 10;
+        switch (lastDigit){
+            case 1:
+                System.out.println(number + "доллар");
+                break;
+            case 2:
+            case 3:
+            case 4:
+                System.out.println(number + "доллара");
+                break;
+            default:
+                System.out.println(number + "долларов");
 
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        System.out.println();
+
+        }
+
     }
-      static boolean isDivideFor18And3(int number){
-        return  18 % 3 == 0;
 
 
-      }
+    }
 
-
-}
