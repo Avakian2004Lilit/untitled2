@@ -1,32 +1,29 @@
-package classwork7;
+package homwork18okto;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class HW1 {
     public static void main(String[] args) {
-        Random rand = new Random();
+        Scanner scanner = new Scanner(System.in);
+        int naturalNumber = scanner.nextInt();
+        int sumOfNumber = naturalNumber;
+        int howTimeCount = 0;
+        while (sumOfNumber > 0){
+            howTimeCount++;
+            int maxDivider =maxDivider(sumOfNumber);
+            sumOfNumber -= maxDivider;
 
-        boolean Eagle = true;
-        boolean Tails = false;
-        System.out.println(rand.nextBoolean());
-
+        }
+        System.out.println(howTimeCount);
     }
 
-    static boolean fellout(){
-        Random random= new Random();
-        boolean Eagle = random.nextBoolean();
-        boolean Tails = random.nextBoolean();
-        return Eagle && Tails;
+    static int maxDivider(int number){
+        for (int i = number /2; i > 0;i--){
+            if (number % i == 0){
+                return i;
+            }
 
+        }
+        return 1;
 
-    }
-
-    public static void main(String[] args) {
-        Random random = new Random();
-          random.nextInt(2024);
-
-
-    }
-
-    }
+}
