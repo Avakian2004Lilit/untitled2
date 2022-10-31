@@ -1,0 +1,22 @@
+   0 export MYVAR=lilit
+   1 env
+   2 echo "hello"
+   3 echo -e '#!/bin/bash\n date\n echo "it works!"'
+   4 echo -e '#!/bin/bash\n date\n echo "it works!"' > /tmp/script.sh
+   5 cat /tmp/script.sh
+   6 cd /tmp/
+   7 ./script.sh
+   8 /tmp/script.sh
+   9 bash /tmp/script.sh
+  10 chmod 744 script.sh
+  11 ls -l
+  12 mv /tmp/script.sh /bin/lilit
+  13 lilit
+  14 nano /bin/lilit
+  15 lilit
+  16 nano /bin/lilit
+  17 lilit
+  18 nano /bin/lilit
+  19 lilit
+  20 history
+  21 history > history.txt
