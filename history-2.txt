@@ -1,0 +1,13 @@
+   0 nano fullscript.sh
+   1 mkdir -p /tmp/test
+   2 touch /tmp/mydate.txt
+   3 date +"%H:%M:%S" >> /tmp/mydate.txt
+   4 nano fullscript.sh
+   5 df -h > Tmp/mydate.txt
+   6 df -h > /tmp/mydate.txt
+   7 mkdir -p /opt/mydate/newmydate.txt
+   8 nano fullscript.sh
+   9 echo "Well done Boss"
+  10 chmod 744 fullscript.sh
+  11 history
+  12 history > history.txt
